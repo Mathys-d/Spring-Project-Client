@@ -18,14 +18,16 @@ public class Client {
     private String lastName;
     private LocalDate birth;
     private String drivingLicense;
+    private LocalDate drivingLicenseDateObtained;
 
     public Client() {}
-    public Client(int id, String first_name, String last_name, LocalDate birth, String driving_license) {
+    public Client(int id, String first_name, String last_name, LocalDate birth, String driving_license,LocalDate driving_licenseDateObtained) {
         this.id = id;
         this.firstName = first_name;
         this.lastName = last_name;
         this.birth = birth;
         this.drivingLicense = driving_license;
+        this.drivingLicenseDateObtained = driving_licenseDateObtained;
     }
 
     public int getId() {
@@ -68,17 +70,23 @@ public class Client {
         this.drivingLicense = drivingLicense;
     }
 
+    public LocalDate getDrivingLicenseDateObtained() {
+        return drivingLicenseDateObtained;
+    }
+
+    public void setDrivingLicenseDateObtained(LocalDate drivingLicenseDateObtained) {
+        this.drivingLicenseDateObtained = drivingLicenseDateObtained;
+    }
+
     @Override
     public String toString() {
-        return "Clients{" +
+        return "Client{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", birth=" + birth +
                 ", drivingLicense='" + drivingLicense + '\'' +
+                ", drivingLicenseDateObtained=" + drivingLicenseDateObtained +
                 '}';
     }
-
-
-
 }

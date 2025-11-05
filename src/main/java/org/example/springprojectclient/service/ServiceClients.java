@@ -52,6 +52,7 @@ public class ServiceClients implements ClientDao {
                 clientt.setLastName(client.getLastName());
                 clientt.setBirth(client.getBirth());
                 clientt.setDrivingLicense(client.getDrivingLicense());
+                clientt.setDrivingLicenseDateObtained(client.getDrivingLicenseDateObtained());
             }
         }
         return client;
