@@ -5,7 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
 import java.time.LocalDate;
 
 @Tag(name = "tag_at_class_Client",description = "Client related class level tag")
@@ -50,6 +49,10 @@ public class Client {
         return drivingLicense;
     }
 
+    public LocalDate getDrivingLicenseDateObtained() {
+        return drivingLicenseDateObtained;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -68,10 +71,6 @@ public class Client {
 
     public void setDrivingLicense(String drivingLicense) {
         this.drivingLicense = drivingLicense;
-    }
-
-    public LocalDate getDrivingLicenseDateObtained() {
-        return drivingLicenseDateObtained;
     }
 
     public void setDrivingLicenseDateObtained(LocalDate drivingLicenseDateObtained) {

@@ -1,7 +1,6 @@
 package org.example.springprojectclient.dao;
 
 import org.example.springprojectclient.modele.Client;
-
 import java.util.List;
 
 public interface ClientDao {
