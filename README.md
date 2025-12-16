@@ -21,7 +21,7 @@ Assure‑toi d’avoir :
 - **Java JDK 17 ou supérieur**
 - **Maven**
 - Un **Eureka Server** déjà démarré (par ex. dans `Spring-Project-server-eureka`)  
-  par défaut visible sur `http://localhost:8761/` :contentReference[oaicite:3]{index=3}
+  par défaut visible sur `http://localhost:8761/` 
 
 ---
 
